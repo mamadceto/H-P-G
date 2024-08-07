@@ -6,7 +6,6 @@ This project is a simple web-based key generator. It allows users to select a ke
 
 - **Select Key Type:** Users can choose a key type from a dropdown menu.
 - **Generate Keys:** Users can generate keys by clicking a button.
-- **Contact Creator:** Users can contact the creator using a provided button.
 - **Responsive Design:** The layout is responsive and adjusts to different screen sizes.
 
 ## Demo
@@ -25,11 +24,11 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/key-generator.git
+    git clone https://github.com/mamadceto/H-P-G.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd key-generator
+    cd H-P-G
     ```
 3. Open `index.html` in your browser:
     ```sh
@@ -41,7 +40,6 @@ To run this project locally, follow these steps:
 1. Open the `index.html` file in your web browser.
 2. Select a key type from the dropdown menu.
 3. Click the "Generate Keys" button to generate keys.
-4. Click the "Contact Creator" button to get contact information for the creator.
 
 ## File Structure
 
