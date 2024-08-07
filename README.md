@@ -41,17 +41,6 @@ To run this project locally, follow these steps:
 2. Select a key type from the dropdown menu.
 3. Click the "Generate Keys" button to generate keys.
 
-## File Structure
-
-H-P-G/
-────────────────────────────────
-├── index.html # Main HTML file
-────────────────────────────────
-├── styles.css # CSS styles
-────────────────────────────────
-├── script.js # JavaScript file
-────────────────────────────────
-
 
 ## Customization
 
