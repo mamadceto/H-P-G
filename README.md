@@ -109,11 +109,6 @@ To customize the project, you can modify the HTML, CSS, and JavaScript files:
 - **CSS (`styles.css`)**: Change the styles, colors, and layout.
 - **JavaScript (`script.js`)**: Add or modify the functionality of the key generation process.
 
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
 ## Contact
 
 For any inquiries or feedback, please contact [@mmdceto](https://t.me/mmdceto).
