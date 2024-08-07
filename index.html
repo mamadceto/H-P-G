@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Generator [CeTo]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hamster Promo Code Generator [CeTo]</h1>
+
+        <div class="form-group panel" id="initialPanel">
+            <label for="gameSelect">Select Game:</label>
+            <select id="gameSelect">
+                <option value="1">Riding Extreme 3D</option>
+                <option value="2">Chain Cube 2048</option>
+                <option value="3">My Clone Army</option>
+                <option value="4">Train Miner</option>
+            </select>
+        </div>
+        <div class="form-group panel" id="initialPanel">
+            <label for="keyCountSelect">Select Number of Keys:</label>
+            <select id="keyCountSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <button id="startBtn" class="primary-btn panel" id="initialPanel">Generate Keys</button>
+
+
+        <div id="progressContainer" class="hidden panel">
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <p id="progressText">0%</p>
+            <p id="progressLog">Starting...</p>
+        </div>
+
+        <div id="keyContainer" class="hidden panel">
+            <h2 id="generatedKeysTitle" class="hidden">Generated Keys</h2>
+            <div id="keysList"></div>
+            <button id="copyAllBtn" class="primary-btn hidden">Copy All Keys</button>
+        </div>
+
+        <p id="keyCountLabel" class="hidden panel">Number of keys:</p>
+
+        <button id="generateMoreBtn" class="hidden secondary-btn panel"></button>
+        <button id="creatorChannelBtn" class="secondary-btn panel">Contact Creator</button>
+        <p id="copyStatus" class="hidden panel">Keys copied to clipboard!</p>
+        
+        <div class="footer hidden panel">
+            <p></p>
+            <button id="telegramChannelBtn" class="hidden secondary-btn"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
