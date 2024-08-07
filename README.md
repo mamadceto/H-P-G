@@ -43,11 +43,14 @@ To run this project locally, follow these steps:
 
 ## File Structure
 
-key-generator/
+H-P-G/
+────────────────────────────────
 ├── index.html # Main HTML file
+────────────────────────────────
 ├── styles.css # CSS styles
+────────────────────────────────
 ├── script.js # JavaScript file
-└── README.md # Project description
+────────────────────────────────
 
 
 ## Customization
