@@ -41,6 +41,65 @@ To run this project locally, follow these steps:
 2. Select a key type from the dropdown menu.
 3. Click the "Generate Keys" button to generate keys.
 
+## API Usage
+
+This project uses several APIs to handle the key generation process. Below are the details of these APIs and how they are used:
+
+1. **Login Client API**
+    - **Endpoint:** `https://api.gamepromo.io/promo/login-client`
+    - **Method:** `POST`
+    - **Description:** Logs in a client using the `appToken` and `clientId`, and returns a `clientToken`.
+    - **Request Body:**
+        ```json
+        {
+            "appToken": "your-app-token",
+            "clientId": "generated-client-id",
+            "clientOrigin": "deviceid"
+        }
+        ```
+    - **Response:**
+        ```json
+        {
+            "clientToken": "generated-client-token"
+        }
+        ```
+
+2. **Register Event API**
+    - **Endpoint:** `https://api.gamepromo.io/promo/register-event`
+    - **Method:** `POST`
+    - **Description:** Emulates progress by registering an event using the `clientToken` and `promoId`.
+    - **Request Body:**
+        ```json
+        {
+            "promoId": "your-promo-id",
+            "eventId": "generated-event-id",
+            "eventOrigin": "undefined"
+        }
+        ```
+    - **Response:**
+        ```json
+        {
+            "hasCode": true
+        }
+        ```
+
+3. **Create Code API**
+    - **Endpoint:** `https://api.gamepromo.io/promo/create-code`
+    - **Method:** `POST`
+    - **Description:** Generates a key using the `clientToken` and `promoId`.
+    - **Request Body:**
+        ```json
+        {
+            "promoId": "your-promo-id"
+        }
+        ```
+    - **Response:**
+        ```json
+        {
+            "promoCode": "generated-promo-code"
+        }
+        ```
+
 
 ## Customization
 
