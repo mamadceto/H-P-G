@@ -1,6 +1,6 @@
-# Key Generator
+# Hamster Kombat Key/Promo Generator
 
-This project is a simple web-based key generator. It allows users to select a key type from a dropdown menu and generate keys based on their selection. Additionally, users can contact the creator through a button provided on the interface.
+This project is a web-based key generator designed specifically for the "Hamster" game on Telegram. In the "Hamster" game, players typically need to participate in various mini-games within the playground to earn keys. This project allows users to bypass the gameplay and generate keys directly through the interface.
 
 ## Features
 
