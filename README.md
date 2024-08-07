@@ -50,15 +50,6 @@ To customize the project, you can modify the HTML, CSS, and JavaScript files:
 - **CSS (`styles.css`)**: Change the styles, colors, and layout.
 - **JavaScript (`script.js`)**: Add or modify the functionality of the key generation process.
 
-## Contributing
-
-Contributions are welcome! If you have any ideas, suggestions, or bug fixes, please open an issue or submit a pull request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
 
 ## License
 
@@ -66,4 +57,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any inquiries or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
+For any inquiries or feedback, please contact [@mmdceto](https://t.me/mmdceto).
