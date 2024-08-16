@@ -26,6 +26,11 @@ const games = {
         name: 'Merge Away',
         appToken: '8d1cc2ad-e097-4b86-90ef-7a27e19fb833',
         promoId: 'dc128d28-c45b-411c-98ff-ac7726fbaea4'
+    },
+    6: {
+        name: 'Twerk Race 3D',
+        appToken: 'example-app-token-for-twerk-race',
+        promoId: 'example-promo-id-for-twerk-race'
     }
 };
 
