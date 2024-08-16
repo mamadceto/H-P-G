@@ -1,163 +1,158 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1e1e1e; 
-    color: #f5f5f5; 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden; 
 }
 
 .container {
-    background: #2c2c2c; 
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    padding: 30px;
-    max-width: 600px;
-    width: calc(100% - 40px); 
-    max-height: calc(100vh - 40px); 
-    margin: 20px; 
-    overflow: auto; 
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
     text-align: center;
-    box-sizing: border-box; 
+    padding: 20px;
 }
 
-h1 {
-    margin-bottom: 20px;
-    color: #b39ddb;
+.header h1 {
+    margin: 0;
+    color: #333;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.select-group {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #e1bee7; 
-}
-
-select {
-    width: 100%;
-    padding: 12px;
+.select-group select {
+    margin: 0 10px;
+    padding: 10px;
     font-size: 16px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #7e57c2; 
-    background-color: #3c3c3c; 
-    color: #f5f5f5; 
 }
 
-button {
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    color: #fff;
-    transition: background-color 0.3s;
-}
-
-.primary-btn {
-    background-color: #7e57c2; 
-}
-
-.primary-btn:hover {
-    background-color: #5e35b1; 
-}
-
-.secondary-btn {
-    background-color: #424242; 
-    margin-top: 20px;
-}
-
-.secondary-btn:hover {
-    background-color: #616161; 
+#initialPanel, #progressContainer, #keyContainer {
+    display: none;
 }
 
 .hidden {
     display: none;
 }
 
-.progress-bar {
-    background-color: #3c3c3c; 
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 20px;
-    height: 20px;
-    position: relative;
+#initialPanel {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.progress-bar div {
-    height: 100%;
-    background-color: #7e57c2; 
+#progressContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#progressBar {
     width: 0;
+    height: 20px;
+    background-color: #4caf50;
     transition: width 0.5s;
 }
 
 #progressText {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #e1bee7; 
+    margin: 10px 0;
+    font-size: 18px;
 }
 
-.key-item {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    background: #3c3c3c;
-    padding: 10px;
-    border-radius: 8px;
+#progressLog {
+    font-size: 16px;
 }
 
-.key-item input {
-    flex: 1;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #7e57c2; 
-    border-radius: 8px;
-    background-color: #2c2c2c; 
-    color: #f5f5f5; 
-    margin-right: 10px;
-}
-
-.copyKeyBtn {
-    background-color: #ab47bc; 
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.copyKeyBtn:hover {
-    background-color: #8e24aa; 
-}
-
-.footer {
+#keyContainer {
+    text-align: center;
     margin-top: 20px;
-    font-size: 14px;
-    color: #e1bee7; 
 }
 
-#copyStatus {
-    margin-top: 10px;
-    color: #7e57c2; 
+#keyContainer .key-item {
+    margin: 10px 0;
+}
+
+#keyContainer .key-item input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+}
+
+#keyContainer .key-item button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 #copyAllBtn {
-    margin: 5px; 
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
+#copyStatus {
+    display: none;
+    text-align: center;
+    color: green;
+}
+
+#errorModal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#errorModal .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+#errorModal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
 
 @media (max-width: 600px) {
     .container {
-        width: 100%; 
-        height: calc(100vh - 20px); 
-        margin: 10px; 
+        width: 100%;
+        height: calc(100vh - 20px);
+        margin: 10px;
     }
 }
