@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promo Generator [CeTo]</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .hidden {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hamster Promo Code Generator [CeTo]</h1>
+        <div class="header">
+            <h1>Hamster Promo Code Generator [CeTo]</h1>
+        </div>
 
         <div id="initialPanel" class="form-group panel">
-            <div>
+            <div class="select-group">
                 <label for="gameSelect">Select Game:</label>
                 <select id="gameSelect">
                     <option value="1">Riding Extreme 3D</option>
@@ -27,7 +24,7 @@
                     <option value="6">Twerk Race 3D</option>
                 </select>
             </div>
-            <div>
+            <div class="select-group">
                 <label for="keyCountSelect">Select Number of Keys:</label>
                 <select id="keyCountSelect">
                     <option value="1">1</option>
@@ -61,6 +58,14 @@
         
         <div class="footer hidden panel">
             <button id="telegramChannelBtn" class="secondary-btn">Telegram Channel</button>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="errorMessage">An error occurred</p>
         </div>
     </div>
 
