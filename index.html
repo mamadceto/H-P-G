@@ -6,7 +6,6 @@
     <title>Promo Generator [CeTo]</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Adding styles to hide and show elements */
         .hidden {
             display: none;
         }
@@ -16,7 +15,6 @@
     <div class="container">
         <h1>Hamster Promo Code Generator [CeTo]</h1>
 
-        <!-- Initial Panel: Shows when the page starts and is hidden during progress -->
         <div id="initialPanel" class="form-group panel">
             <div>
                 <label for="gameSelect">Select Game:</label>
@@ -40,7 +38,6 @@
             <button id="startBtn" class="primary-btn">Generate Keys</button>
         </div>
 
-        <!-- Progress Container: Shows during key generation and is hidden initially -->
         <div id="progressContainer" class="hidden panel">
             <div class="progress-bar">
                 <div id="progressBar"></div>
@@ -49,7 +46,6 @@
             <p id="progressLog">Starting...</p>
         </div>
 
-        <!-- Key Container: Shows when keys are generated and hidden initially -->
         <div id="keyContainer" class="hidden panel">
             <h2 id="generatedKeysTitle">Generated Keys</h2>
             <div id="keysList"></div>
