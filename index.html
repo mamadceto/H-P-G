@@ -5,15 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promo Generator [CeTo]</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+        .error-box {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: none;
+        }
+        .error-box button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Hamster Promo Code Generator [CeTo]</h1>
-        </div>
+        <h1>Hamster Promo Code Generator [CeTo]</h1>
 
         <div id="initialPanel" class="form-group panel">
-            <div class="select-group">
+            <div>
                 <label for="gameSelect">Select Game:</label>
                 <select id="gameSelect">
                     <option value="1">Riding Extreme 3D</option>
@@ -24,7 +48,7 @@
                     <option value="6">Twerk Race 3D</option>
                 </select>
             </div>
-            <div class="select-group">
+            <div>
                 <label for="keyCountSelect">Select Number of Keys:</label>
                 <select id="keyCountSelect">
                     <option value="1">1</option>
@@ -59,12 +83,10 @@
         <div class="footer hidden panel">
             <button id="telegramChannelBtn" class="secondary-btn">Telegram Channel</button>
         </div>
-    </div>
 
-    <div id="errorModal" class="hidden">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="errorMessage">An error occurred</p>
+        <div id="errorBox" class="error-box">
+            <span id="errorMessage">An error occurred!</span>
+            <button id="closeErrorBox">×</button>
         </div>
     </div>
 
