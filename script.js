@@ -122,7 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        // Ensure using template literals correctly
         const keys = await Promise.all(Array.from({ length: keyCount }, () => generateKeyProcess()));
 
         if (keys.length > 1) {
