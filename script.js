@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         progressBar.style.width = '0%';
         progressText.innerText = '0%';
-        progressLog.innerText = 'Starting... \n Please wait It may take up to 1 min to Login';
+        progressLog.innerText = 'Starting... \n Please wait It may take up to 10 min';
         progressContainer.classList.remove('hidden');
         keyContainer.classList.add('hidden');
         generatedKeysTitle.classList.add('hidden');
