@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let i = 0; i < game.attemptsNumber; i++) {
                 await sleep(game.eventsDelay * delayRandom());
                 const hasCode = await emulateProgress(clientToken, game.promoId);
-                updateProgress((100 / keyCount) / game.attemptsNumber, 'Emulating progress...');
+                updateProgress((100 / keyCount) / game.attemptsNumber, 'Emulating progress... \n Please wait It may take up to 10 min');
                 if (hasCode) {
                     break;
                 }
