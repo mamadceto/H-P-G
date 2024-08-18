@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const MAX_KEYS_PER_GAME_PER_DAY = 10;
-    //const EVENTS_DELAY = 20000;
 
     const games = {
         1: {
@@ -184,8 +183,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let progress = 0;
         const updateProgress = (increment, message) => {
             progress += increment;
-            progressBar.style.width = `${progress}%`;
-            progressText.innerText = `${progress}%`;
+            progressBar.style.width = `${Math.round(progress)}%`;
+            progressText.innerText = `${Math.round(progress)}%`;
             progressLog.innerText = message;
         };
 
@@ -203,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let i = 0; i < game.attemptsNumber; i++) {
                 await sleep(game.eventsDelay * delayRandom());
                 const hasCode = await emulateProgress(clientToken, game.promoId);
-                updateProgress(((100 / keyCount) / game.attemptsNumber), 'Emulating progress...');
+                updateProgress((100 / keyCount) / game.attemptsNumber, 'Emulating progress...');
                 if (hasCode) {
                     break;
                 }
@@ -269,10 +268,12 @@ document.addEventListener('DOMContentLoaded', () => {
         progressText.innerText = '100%';
         progressLog.innerText = 'Complete';
 
+        // Show the initial panel and reset button state
         showInitialPanel();
-
         startBtn.classList.remove('hidden');
         startBtn.disabled = false;
+        keyCountSelect.classList.remove('hidden');
+        gameSelect.classList.remove('hidden');
     });
 
     generateMoreBtn.addEventListener('click', () => {
@@ -323,3 +324,4 @@ document.addEventListener('DOMContentLoaded', () => {
         generatedCodesContainer.style.display = 'block';
     });
 });
+        
