@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         progressBar.style.width = '0%';
         progressText.innerText = '0%';
-        progressLog.innerText = 'Starting...';
+        progressLog.innerText = 'Starting... \n Please wait It may take up to 1 min to Login';
         progressContainer.classList.remove('hidden');
         keyContainer.classList.add('hidden');
         generatedKeysTitle.classList.add('hidden');
@@ -184,8 +184,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let progress = 0;
         const updateProgress = (increment, message) => {
             progress += increment;
-            progressBar.style.width = `${progress}%`;
-            progressText.innerText = `${progress}%`;
+            const roundedProgress = Math.round(progress);
+            progressBar.style.width = `${roundedProgress}%`;
+            progressText.innerText = `${roundedProgress}%`;
             progressLog.innerText = message;
         };
 
@@ -203,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let i = 0; i < game.attemptsNumber; i++) {
                 await sleep(game.eventsDelay * delayRandom());
                 const hasCode = await emulateProgress(clientToken, game.promoId);
-                updateProgress(((100 / keyCount) / game.attemptsNumber), 'Emulating progress...');
+                updateProgress((100 / keyCount) / game.attemptsNumber, 'Emulating progress...');
                 if (hasCode) {
                     break;
                 }
