@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
         1: {
-            name: 'Bike Ride 3D',
+            name: 'Riding Extreme 3D',
             appToken: 'd28721be-fd2d-4b45-869e-9f253b554e50',
             promoId: '43e35910-c168-4634-ad4f-52fd764a843f',
             timing: 30000,
@@ -64,24 +64,45 @@ document.addEventListener('DOMContentLoaded', () => {
             attempts: 20,
         },
         10: {
-            name: 'Zoopolis',
-            appToken: 'b2436c89-e0aa-4aed-8046-9b0515e1c46b',
-            promoId: 'b2436c89-e0aa-4aed-8046-9b0515e1c46b',
-            timing: 20000,
-            attempts: 20,
-        },
-        11: {
             name: 'Tile Trio',
             appToken: 'e68b39d2-4880-4a31-b3aa-0393e7df10c7',
             promoId: 'e68b39d2-4880-4a31-b3aa-0393e7df10c7',
             timing: 20000,
             attempts: 20,
         },
-       12: {
+        11: {
+            name: 'Zoopolis',
+            appToken: 'b2436c89-e0aa-4aed-8046-9b0515e1c46b',
+            promoId: 'b2436c89-e0aa-4aed-8046-9b0515e1c46b',
+            timing: 20000,
+            attempts: 20,
+        },
+        12: {
             name: 'Fluff Crusade',
             appToken: '112887b0-a8af-4eb2-ac63-d82df78283d9',
             promoId: '112887b0-a8af-4eb2-ac63-d82df78283d9',
             timing: 20000,
+            attempts: 30,
+        },
+        13: {
+            name: 'Stone Age',
+            appToken: '04ebd6de-69b7-43d1-9c4b-04a6ca3305af',
+            promoId: '04ebd6de-69b7-43d1-9c4b-04a6ca3305af',
+            timing: 20000,
+            attempts: 30,
+        },
+       14: {
+            name: 'Bouncemasters',
+            appToken: 'bc72d3b9-8e91-4884-9c33-f72482f0db37',
+            promoId: 'bc72d3b9-8e91-4884-9c33-f72482f0db37',
+            timing: 20000,
+            attempts: 30,
+        },
+        15: {
+            name: 'Hide Ball',
+            appToken: '4bf4966c-4d22-439b-8ff2-dc5ebca1a600',
+            promoId: '4bf4966c-4d22-439b-8ff2-dc5ebca1a600',
+            timing: 40000,
             attempts: 30,
         }
     };
