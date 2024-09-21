@@ -104,6 +104,41 @@ document.addEventListener('DOMContentLoaded', () => {
             promoId: '4bf4966c-4d22-439b-8ff2-dc5ebca1a600',
             timing: 40000,
             attempts: 30,
+        },
+        16: {
+            name: 'Pin Out Master',
+            appToken: 'd2378baf-d617-417a-9d99-d685824335f0',
+            promoId: 'd2378baf-d617-417a-9d99-d685824335f0',
+            timing: 20000,
+            attempts: 30,
+        },
+        17: {
+            name: 'Count Masters',
+            appToken: '4bdc17da-2601-449b-948e-f8c7bd376553',
+            promoId: '4bdc17da-2601-449b-948e-f8c7bd376553',
+            timing: 20000,
+            attempts: 30,
+        },
+        18: {
+            name: 'Infected Frontier',
+            appToken: 'eb518c4b-e448-4065-9d33-06f3039f0fcb',
+            promoId: 'eb518c4b-e448-4065-9d33-06f3039f0fcb',
+            timing: 20000,
+            attempts: 30,
+        },
+        19: {
+            name: 'Among Water',
+            appToken: 'daab8f83-8ea2-4ad0-8dd5-d33363129640',
+            promoId: 'daab8f83-8ea2-4ad0-8dd5-d33363129640',
+            timing: 20000,
+            attempts: 30,
+        },
+        20: {
+            name: 'Factory World',
+            appToken: 'd02fc404-8985-4305-87d8-32bd4e66bb16',
+            promoId: 'd02fc404-8985-4305-87d8-32bd4e66bb16',
+            timing: 20000,
+            attempts: 30,
         }
     };
 
